@@ -1,17 +1,31 @@
 package fizzbuzz_if
 
+//冗長に書いたパターン
+//fun fizzBuzz(i: Int): String {
+//    val result: String
+//    if (i % 15 == 0) {
+//        result = "FizzBuzz"
+//    } else if (i % 3 == 0) {
+//        result = "Fizz"
+//    } else if (i % 5 == 0) {
+//        result = "Buzz"
+//    } else {
+//        result = "$i"
+//    }
+//    return result
+//}
+
+//早期 return にしたパターン
 fun fizzBuzz(i: Int): String {
-    val result: String
     if (i % 15 == 0) {
-        result = "FizzBuzz"
+        return "FizzBuzz"
     } else if (i % 3 == 0) {
-        result = "Fizz"
+        return "Fizz"
     } else if (i % 5 == 0) {
-        result = "Buzz"
+        return "Buzz"
     } else {
-        result = "$i"
+        return "$i"
     }
-    return result
 }
 
 fun main(args: Array<String>) {

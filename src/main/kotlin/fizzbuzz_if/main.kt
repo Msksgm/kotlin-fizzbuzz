@@ -16,15 +16,28 @@ package fizzbuzz_if
 //}
 
 //早期 return にしたパターン
+//fun fizzBuzz(i: Int): String {
+//    if (i % 15 == 0) {
+//        return "FizzBuzz"
+//    } else if (i % 3 == 0) {
+//        return "Fizz"
+//    } else if (i % 5 == 0) {
+//        return "Buzz"
+//    } else {
+//        return "$i"
+//    }
+//}
+
+//if 式の結果を直接 return を渡したパターン
 fun fizzBuzz(i: Int): String {
-    if (i % 15 == 0) {
-        return "FizzBuzz"
+    return if (i % 15 == 0) {
+        "FizzBuzz"
     } else if (i % 3 == 0) {
-        return "Fizz"
+        "Fizz"
     } else if (i % 5 == 0) {
-        return "Buzz"
+        "Buzz"
     } else {
-        return "$i"
+        "$i"
     }
 }
 
